@@ -12,7 +12,7 @@
 * `run_imputation.py` is used to compute the metrics for the deep imputation methods. An example of usage is
 
 	```
-	python ./scripts/run_imputation.py --config config/pogevon/air36.yaml --in-sample False
+	python run_imputation.py --config config/pogevon/air36.yaml --in-sample False
 	```
 
 * When running experiments for `PEMS-BA`, `PEMS-LA` and `PEMS-SD` datasets, one needs to change the `subdataset_name` value in config file `pems.ymal` to `'PEMS-04'`, `'PEMS-07'` and `'PEMS-11'` respectively.
