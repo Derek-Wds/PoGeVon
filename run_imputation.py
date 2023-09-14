@@ -271,12 +271,5 @@ def run_experiment(args):
 
 if __name__ == '__main__':
     args = parse_args()
-    output = defaultdict(list)
-    for seed in [1, 22, 33, 222, 12345]:
-        args.seed = seed
-        outs = run_experiment(args)
-        for n in outs: output[n].extend(outs[n])
-    print('FINAL RESULTS:')
-    for n in output:
-        print(f' {n}: {np.mean(output[n]):.5f}')
-        print(f' {n}: {np.std(output[n]):.5f}')
+    outs = run_experiment(args)
+    print(outs)
